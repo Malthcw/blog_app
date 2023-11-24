@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>$(post.title)</title>
-    <link rel="stylesheet" href="../style.css" />
+    <title>${post.title}</title>
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,78 +14,81 @@
   </head>
   <body>
     <nav class="nav">
-        <div class="nav__logo"><a href="/">BLOGM</a></div>
-        <a class="nav__hamburger">
-          <span class="nav__hamburger__line"></span>
-          <span class="nav__hamburger__line"></span>
-          <span class="nav__hamburger__line"></span>
-        </a>
-        <div class="nav__menu">
-          <div>
-            <div id="register-div">
-              <h1>Register</h1>
-              <form id="register-form">
-                <input
-                  type="text"
-                  id="register-username"
-                  placeholder="Username"
-                />
-                <input
-                  type="password"
-                  id="register-password"
-                  placeholder="Password"
-                />
-                <select id="register-role">
-                  <option value="reader">Reader</option>
-                  <option value="admin">Admin</option>
-                </select>
-                <button type="submit">Register</button>
-              </form>
-            </div>
-            <div id="logout-div">
-              <h2 id="username">Username</h2>
-              <button id="logout-button">Logout</button>
-            </div>
-  
-            <div id="login-div">
-              <h1>Login</h1>
-              <form id="login-form">
-                <input type="text" id="login-username" placeholder="Username" />
-                <input
-                  type="password"
-                  id="login-password"
-                  placeholder="Password"
-                />
-                <button id="login-button" type="submit">Login</button>
-              </form>
-            </div>
+      <div class="nav__logo"><a href="/">Nordic Rose</a></div>
+      <a class="nav__hamburger">
+        <span class="nav__hamburger__line"></span>
+        <span class="nav__hamburger__line"></span>
+        <span class="nav__hamburger__line"></span>
+      </a>
+      <div class="nav__menu">
+        <div>
+          <div id="register-div">
+            <h1>Register</h1>
+            <form id="register-form">
+              <input
+                type="text"
+                id="register-username"
+                placeholder="Username"
+              />
+              <input
+                type="password"
+                id="register-password"
+                placeholder="Password"
+              />
+              <select id="register-role">
+                <option value="reader">Reader</option>
+                <option value="admin">Admin</option>
+              </select>
+              <button type="submit">Register</button>
+            </form>
+          </div>
+          <div id="logout-div">
+            <h2 id="username">Username</h2>
+            <button id="logout-button">Logout</button>
+          </div>
+
+          <div id="login-div">
+            <h1>Login</h1>
+            <form id="login-form">
+              <input type="text" id="login-username" placeholder="Username" />
+              <input
+                type="password"
+                id="login-password"
+                placeholder="Password"
+              />
+            </form>
+            <button id="login-button" type="submit">Login</button>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
     <main>
       `
-       <img src="${post.imageUrl}" class="detail-post-img"/>
-       <div class="post-content">
+      <img src="${post.imageUrl}" class="detail-post-img" />
+      <div class="post-content">
         <h1 class="post-title">${post.title}</h1>
         <div class="extra-info">
-            <p class="post-timestamp">${post.timestamp}</p>
-            <p class="post-author">${post.author}</p>
+          <p class="post-timestamp">${post.timestamp}</p>
+          <p class="post-author">${post.author}</p>
         </div>
         <p>${post.content}</p>
-       </div>
-       `
+      </div>
     </main>
+    `
     <footer>
       <h3>BlogM</h3>
       <p>BlogM is a blog website where you can read and write blogs.</p>
-     <span><p>&copy;</p><script>
-     document.write(new Date().getFullYear());
-     </script>
-     </span> 
+      <span
+        ><p>&copy;</p>
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </span>
       <!-- <div class="footer__social">
         <a href="https://www.facebook.com/" target="_blank">Facebook</a>
         <a href="https://www.instagram.com/" target="_blank">Instagram</a>
         <a href="https://twitter.com/" target="_blank">Twitter</a>
       </div> -->
+    </footer>
   </body>
 </html>
