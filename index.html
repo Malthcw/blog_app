@@ -16,68 +16,67 @@
   </head>
   <body>
     <nav class="nav">
-        <div class="nav__logo"><a href="/">BLOGM</a></div>
-        <a class="nav__hamburger">
-          <span class="nav__hamburger__line"></span>
-          <span class="nav__hamburger__line"></span>
-          <span class="nav__hamburger__line"></span>
-        </a>
-        <div class="nav__menu">
-          <div>
-            <div id="register-div">
-              <h1>Register</h1>
-              <form id="register-form">
-                <input
-                  type="text"
-                  id="register-username"
-                  placeholder="Username"
-                />
-                <input
-                  type="password"
-                  id="register-password"
-                  placeholder="Password"
-                />
-                <select id="register-role">
-                  <option value="reader">Reader</option>
-                  <option value="admin">Admin</option>
-                </select>
-                <button type="submit">Register</button>
-              </form>
-            </div>
-            <div id="logout-div">
-              <h2 id="username">Username</h2>
-              <button id="logout-button">Logout</button>
-            </div>
-  
-            <div id="login-div">
-              <h1>Login</h1>
-              <form id="login-form">
-                <input type="text" id="login-username" placeholder="Username" />
-                <input
-                  type="password"
-                  id="login-password"
-                  placeholder="Password"
-                />
-                <button id="login-button" type="submit">Login</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </nav>
-    <main>
-        <!--Get Back Here-->
-        <div id="posts-list">
-        </div>
-        <div id="new-post-div" style="display: none">
-            <h2>New Post</h2>
-            <form id="new-post-form">
-              <input type="text" id="title" placeholder="Title" />
-              <textarea id="content" placeholder="Content"></textarea>
-              <input type="text" id="image-url" placeholder="Image URL" />
-              <button type="submit">Create post</button>
+      <div class="nav__logo"><a href="/">BLOGM</a></div>
+      <a class="nav__hamburger">
+        <span class="nav__hamburger__line"></span>
+        <span class="nav__hamburger__line"></span>
+        <span class="nav__hamburger__line"></span>
+      </a>
+      <div class="nav__menu">
+        <div>
+          <div id="register-div">
+            <h1>Register</h1>
+            <form id="register-form">
+              <input
+                type="text"
+                id="register-username"
+                placeholder="Username"
+              />
+              <input
+                type="password"
+                id="register-password"
+                placeholder="Password"
+              />
+              <select id="register-role">
+                <option value="reader">Reader</option>
+                <option value="admin">Admin</option>
+              </select>
+              <button type="submit">Register</button>
             </form>
           </div>
-          <div id="post-detail-container"></div>
+          <div id="logout-div">
+            <h2 id="username">Username</h2>
+            <button id="logout-button">Logout</button>
+          </div>
+
+          <div id="login-div">
+            <h1>Login</h1>
+            <form id="login-form">
+              <input type="text" id="login-username" placeholder="Username" />
+              <input
+                type="password"
+                id="login-password"
+                placeholder="Password"
+              />
+              <button id="login-button" type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div id="posts-list"></div>
+
+      <div id="new-post-div" style="display: none">
+        <h2>New Post</h2>
+        <form id="new-post-form">
+          <input type="text" id="title" placeholder="Title" />
+          <textarea id="content" placeholder="Content"></textarea>
+          <input type="text" id="image-url" placeholder="Image URL" />
+          <button type="submit">Create post</button>
+        </form>
+      </div>
+      <div id="post-detail-container"></div>
     </main>
     <footer>
       <h3>BlogM</h3>
